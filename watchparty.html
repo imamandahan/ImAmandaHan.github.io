@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amanda Lu Han</title>
+    <link rel="stylesheet" type="text/css" href="style5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/icon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- Nav Start -->
+<header>
+	<div class="container container-nav">
+		<div class="amandalogo">
+			<p class="semibold">Amanda Lu Han</p>
+		</div>
+		<input class="menu-btn" type="checkbox" id="menu-btn"/>
+		<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+		<nav>
+			<ul>
+				<li><a class="semibold" href="index.html">Work</a></li>
+				<li><a class="semibold" href="play.html">Play</a></li>
+				<li><a class="semibold" href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!-- Nav Close -->
+
+
+<!-- Project Start -->
+<div class="container page-content regular-animation">
+	<div class="watchparty">
+		<div class="project-outline">
+			<a class="medium" href="#introduction">Introduction</a><br>
+			<a class="medium" href="#ourvision">Our Vision</a><br>
+			<a class="medium" href="#designconstraints">Design Constraints</a><br>
+			<a class="medium" href="#understandingusers">Understanding Users</a><br>
+			<a class="medium" href="#designdirection">Design Direction</a><br>
+			<a class="medium" href="#conceptexplanation">Concept Explanation</a><br>
+			<a class="medium" href="#userstory">User Story</a><br>
+			<a class="medium" href="#informationarchitecture">Information Architecture</a><br>
+			<a class="medium" href="#prototyping">Prototyping</a><br>
+			<a class="medium" href="#finaldesign">Final Design</a>
+		</div>
+
+		<div class="project-content">
+			<div>
+				<div class="center">
+					<h1>Watch Party</h1>
+					<p class="medium">An easier way to split the bill.</p>
+				</div>
+				<div class="center project-img-main">
+					<img class="image-card resizable-image" src="img/watchparty/main.jpg" alt="Watch Party" onContextMenu="return false;">
+				</div>
+			</div>
+
+			<div id="introduction" class="project-section-first project-section">
+				<h2>Introduction</h2>
+				<p>As a student, it can be hard to pay for a streaming service subscription monthly. Many of my friends have turned to sharing their accounts with others. Password sharing for streaming services is not uncommon. A <a href="https://cordcutting.com/research/subscription-mooching/" target="_blank">study</a> found that about 17% of respondents borrowed a streaming account from someone else in 2019.
+				<br><br>
+				People try to lower their invidual cost by sharing the subscription with family or friends. My partner and I saw an opportunity to help improve the way we share subscriptions through making the bill splitting and subscription process easier.</p>
+				<div class="purple-section project-section-flex purple-intro">
+					<div class="purple-intro-section1">
+						<p class="purple bold">👯My Team</p>
+						<p class="purple-intro-p">Jennifer Xu</p>
+						<p class="purple bold">👩🏻‍💻My Roles</p>
+						<p class="purple-intro-p purple-intro-p-last">
+						A collaboration effort with my partner, where I focused on market research and UI design. </p>
+					</div>
+					<div class="purple-intro-section2">
+						<p class="purple bold">⏳Duration</p>
+						<p class="purple-intro-p">6 Weeks</p>
+						<p class="purple bold">🛠Tools</p>
+						<p>Figma<br>
+						Photoshop<br>
+						Illustrator</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="ourvision" class="project-section">
+				<h2>Our Vision</h2>
+				<img src="img/watchparty/intro.jpg" alt="Wireframes" onContextMenu="return false;">
+			</div>
+
+			<div id="designconstraints" class="project-section">
+				<h2>Design Constraints</h2>
+				<p>Unfortunately, password sharing does not comply with <a href="https://help.netflix.com/legal/termsofuse" target="_blank">Netflix Terms of Use</a>. The document states the following:
+				<br><br>
+				<span class="caption">“Netflix service is for personal and non-commercial use only and <span class="semibold">may not be shared with individuals beyond your household</span>.”</span>
+				<br><br>
+				For this project, we are hypothesizing that this concept is allowed by streaming companies.</p>
+				<div class="purple-section purple-section-small">
+					<p class="purple bold">What can Watch Party bring to streaming companies?</p>
+					<ol>
+						<li>Creation of new accounts</li>
+						<li>New marketing option</li>
+						<li>Provides market data for service bundling</li>
+							<ol type="a">
+								<li>Services that people bundle</li>
+								<li>Ideal price points</li>
+							</ol>
+					</ol>
+				</div>
+			</div>
+
+			<div id="understandingusers" class="project-section">
+				<h2>Understanding our Users</h2>
+
+				<h3>Target Users</h3>
+				<p>Out of consumers that only use streaming platforms, 44.8% of them are Gen Z’ers (via <a href="https://cordcutting.com/research/subscription-mooching/" target="_blank">source</a>). That’s nearly half! The target audience for Watch Party is students and young adults.</p>
+
+				<h3>Survey</h3>
+				<p>We were able to gather <span class="purple bold">107 responses from users ages 13-27</span> via Google Forms. With selected users, we interviewed them over video call to ask follow up questions.<br><br>
+				<span class="purple bold">Survey Objective:</span></p>
+				<ol>
+					<li>Understand the way young people currently use streaming services.</li>
+					<li>Understand any fears towards sharing subscription plans with non-family members.</li>
+				</ol>
+				<img class="image-card" src="img/watchparty/googlesurvey.jpg" alt="Google Survey" onContextMenu="return false;" width="600">
+				<img src="img/watchparty/surveyresults.jpg" alt="Google Survey Results" onContextMenu="return false;">
+				<p class="caption">Google Survey results.</p>
+				<div class="purple-section purple-section-small">
+					<p class="purple bold">KEY TAKEAWAYS</p>
+					<p>Users are willing to share with non-family members when:</p>
+					<ol type="a">
+						<li>They don’t have to foot the bill.</li>
+						<li>Personal algorithm is not affected.</li>
+						<li>Payment info is private.</li>
+						<li>Password sharing is regulated, and their screen is ensured.</li>
+					</ol>
+				</div>
+			</div>
+
+			<div id="designdirection" class="project-section">
+				<h2>Design Direction</h2>
+				<div class="purple-section">
+					<p class="purple bold">Scope</p>
+					<p>To design a platform that makes bill splitting easier, allowing users to share streaming service subscriptions with ease. </p>
+					<p class="purple bold space-above-small">Design Goals</p>
+					<ol>
+						<li>Save money for the user.</li>
+						<li>Create a time efficient and convenient subscription experience.</li>
+							<ol type="a">
+								<li>Automatic bill splitting.</li>
+								<li>Quick user pairing.</li>
+							</ol>
+						<li>Be transparent. Allow user to feel privacy over their information.</li>
+					</ol>
+				</div>
+			</div>
+
+			<div id="conceptexplanation" class="project-section conceptexplanation">
+				<h2>How does Watch Party improve subscription experience?</h2>
+				<h3>On billing day...</h3>
+				<p class="purple bold space-above-small center">CURRENT FLOW:</p>
+				<div class="center">
+					<img src="img/watchparty/explanation1_current.jpg" alt="Concept Explanation" onContextMenu="return false;" width="500">
+				</div>
+				<div class="red-section">
+					<p class="red bold">Pain Points</p>
+					<p><span class="red bold">✘</span> A has to foot the bill and wait for the others pay them back.
+					<br>
+					<span class="red bold">✘</span> A may have to reach out and have uncomfortable conversations about money.</p>
+				</div>
+
+				<p class="purple bold space-above-large center">NEW FLOW:</p>
+				<div class="center">
+					<img src="img/watchparty/explanation1_new.jpg" alt="Concept Explanation" onContextMenu="return false;" width="500">
+				</div>
+				<div class="green-section">
+					<p class="green bold">Solutions</p>
+					<p><span class="green bold">✔</span> Everyone only pays their portion.
+					<br>
+					<span class="green bold">✔</span> Nobody will owe another person money.</p>
+				</div>
+
+
+				<h3 class="space-above-large">When a user cancels their subscription…</h3>
+				<p class="purple bold space-above-small center">CURRENT FLOW:</p>
+				<div class="center">
+					<img src="img/watchparty/explanation2_current.jpg" alt="Concept Explanation" onContextMenu="return false;" width="500">
+				</div>
+				<div class="red-section">
+					<p class="red bold">Pain Points</p>
+					<p><span class="red bold">✘</span> A, B, and C pay extra while waiting for a new group member.<br>
+					<span class="red bold">✘</span> Wait time is uncertain.<br>
+					<span class="red bold">✘</span> It is extra effort to find a new member.</p>
+				</div>
+
+				<p class="purple bold space-above-large center">NEW FLOW:</p>
+				<div class="center">
+					<img src="img/watchparty/explanation2_new.jpg" alt="Concept Explanation" onContextMenu="return false;" width="500">
+				</div>
+				<div class="green-section">
+					<p class="green bold">Solutions</p>
+					<p><span class="green bold">✔</span> Wait time is short. Remaining members are quickly regenerated into new subscription groups with new login information. <br>
+					<span class="green bold">✔</span> No extra cost. Everyone continues to be billed the same amount.</p>
+				</div>
+			</div>
+
+			<div id="userstory" class="project-section">
+				<h2>User Story</h2>
+				<p>To help us determine the necessary features for our design, we created a user story to map out the types of users on our platform, what they want, and why.</p>
+				<img src="img/watchparty/userstory.png" alt="User Story" onContextMenu="return false;">
+			</div>
+
+			<div id="informationarchitecture" class="project-section">
+				<h2>Information Architecture</h2>
+				<p>The most important feature of this product is the onboarding process. We finalized the onboarding experience through refining our information architecture.</p>
+				<div class="space-above-small">
+					<img src="img/watchparty/informationarchitecture.jpg" alt="Information Architecture" onContextMenu="return false;">
+				</div>
+			</div>
+
+			<div id="prototyping" class="project-section">
+				<h2>Prototyping</h2>
+
+				<h3>Wireframes</h3>
+				<img src="img/watchparty/wireframe.png" alt="Wireframes" onContextMenu="return false;">
+
+				<h3>UI Exploration</h3>
+				<p>Since people will use Watch Party for streaming platforms, I was inspired by movie theater colors for the interface. I created different color schemes to determine the final UI design.</p>
+				<img class="image-card" src="img/watchparty/movietheater.jpg" alt="UI Inspiration" onContextMenu="return false;">
+				<img class="image-card" src="img/watchparty/ui.jpg" alt="UI Exploration" onContextMenu="return false;">
+			</div>
+
+			<div id="finaldesign" class="project-section">
+				<h2>Final Design</h2>
+				<video class="space-above-small" controls>
+				  	<source src="img/watchparty/final.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+
+				<div class="finaldesign-flex space-above-large">
+					<div class="finaldesign-flex-text finaldesign-flex-marginright">
+						<h4>Subscribe to streaming services with ease.</h4>
+						<p>All you have to do is choose your desired streaming services, and Watch Party will take care of the rest.</p>
+					</div>
+					<div class="finaldesign-flex-img-wide finaldesign-flex-img-right">
+						<img class="image-card" src="img/watchparty/finalgif1.gif" alt="Watch Party" onContextMenu="return false;">
+					</div>
+				</div>
+
+				<div class="finaldesign-flex space-above-large">
+					<div class="finaldesign-flex-img-wide finaldesign-flex-marginright">
+						<img class="image-card" src="img/watchparty/finalgif2.gif" alt="Watch Party" onContextMenu="return false;">
+					</div>
+					<div class="finaldesign-flex-text">
+						<h4>Never worry about bill splitting again.</h4>
+						<p>Watch Party automatically bills each member their share of the monthly payment.</p>
+					</div>
+				</div>
+
+				<div class="finaldesign-flex space-above-large">
+					<div class="finaldesign-flex-text finaldesign-flex-marginright">
+						<h4>Easily view or change group members.</h4>
+						<p>Watch Party can always generate a new group member for you. You’ll never have to worry about payment changes.</p>
+					</div>
+					<div class="finaldesign-flex-img-wide finaldesign-flex-img-right">
+						<img class="image-card" src="img/watchparty/finalgif3.gif" alt="Watch Party" onContextMenu="return false;">
+					</div>
+				</div>
+
+				<div class="center space-above-large">
+					<img src="img/watchparty/styleguide.png" alt="Style Guide" onContextMenu="return false;" width="500">
+				</div>
+
+			</div>
+
+
+
+
+
+			<div class="endofproject">
+				<h2>Thanks for viewing!</h2>
+				<a href="index.html"><button type="button">Back to Home</button></a>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+<!-- Project End -->
+
+
+<!-- Footer Start -->
+<footer>
+	<div class="container container-nav footer">
+		<div class="footer-content">
+			<p class="semibold">👩🏻‍💻 Designed & Developed by Amanda Han</p>
+		</div>
+		<div class="footer-content">
+			<a href="https://www.linkedin.com/in/amandaluhan/" class="footer-link hover" target="_blank">🔗LinkedIn</a>
+			<a href = "mailto: ahan01@risd.edu" class="footer-link hover" target="_blank">🔗Email</a>
+		</div>
+	</div>
+</footer>
+<!-- Footer End -->
+
+
+
+</body>
+</html>
